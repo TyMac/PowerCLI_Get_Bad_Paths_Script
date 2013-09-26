@@ -21,7 +21,7 @@ Function Send-Mail  {
     $mail = $ol.CreateItem(0)
     $Mail.Recipients.Add("username@email.com")
     $Mail.Subject = "Could not connect to vsphere"
-    $Mail.HTMLBody =  "Could not connect to vSphere - maybe your creds expired for the CD-Rom report script"
+    $Mail.HTMLBody =  "Could not connect to vSphere - maybe your creds expired for the Bad Paths report script"
     $Mail.Send()
 
 }
