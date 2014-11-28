@@ -26,19 +26,18 @@ Function Send-Mail  {
 
 }
 
-function ConnectViServer ($Server) {
 
-    try {
+try {
             
-        Connect-VIServer -Server $Server -Protocol https -User $vcenter_user -Password $pswd
+        Connect-VIServer -Server $vcenter_server -Protocol https -User $vcenter_user -Password $pswd
 
         }
 
-    Catch {
+Catch {
 
         Send-Mail
         
-        }
+}
 
  }
 
